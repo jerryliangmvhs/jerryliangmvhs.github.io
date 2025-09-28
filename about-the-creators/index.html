@@ -9,6 +9,12 @@
     <link rel="icon" type="image/x-icon" href="/images/website-icon.png">
 </head>
 <style>
+    @keyframes fade-in{
+        from{
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    }
     body{
         width: 100vw;
         height: 100vh;
@@ -22,6 +28,7 @@
         align-items: center;
         flex: 1;
         margin-top: 70px;
+        animation: fade-in 1.5s forwards;
     }
     .site-topic{
         font-size: clamp(30px, 4vw, 70px);
