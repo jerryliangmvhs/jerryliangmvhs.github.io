@@ -1,14 +1,15 @@
 function renderNavbar(){
-    return `      <div class = "navbar">
+    return `      
+        <div class = "navbar">
             <h1 class = "website-name">LILALO Chemistry</h1>
             <nav class = "links">
                 <ul>
                     <li><a href = "/">Home</a></li>
                     <li><a class = "units-link" id = "units-link">Units<span class = "units-dropdown-arrow" id = "units-dropdown-arrow">▾</span></a></li>
                     <li><a class = "blogs-link" id = "blogs-link">Research Blogs<span class = "blogs-dropdown-arrow" id = "blogs-dropdown-arrow">▾</span></a></li>
-                    <li><a href = "/about-the-creators/">About the Creators</a></li>
                 </ul>
             </nav>
+            <button onclick = "location.assign('/about-the-creators/')"><span>About the Creators</span></button>
             <img class = "hamburger-menu" id = "hamburger-menu" src = "/images/Hexagon Menu Icon.png">
         </div>
         <div class = "units-dropdown-menu" id = "units-dropdown-menu">
