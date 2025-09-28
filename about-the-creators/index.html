@@ -13,6 +13,55 @@
         width: 100vw;
         height: 100vh;
         background-color: rgb(32, 10, 70);
+        display: flex;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        margin-top: 70px;
+    }
+    .site-topic{
+        font-size: clamp(30px, 4vw, 70px);
+        color: white;
+        font-family: sunday-morning;
+        margin: 25px;
+    }
+    .bio-card-container{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bio-card{
+        background-color: rgba(255,255,255,0.8);
+        width: 20vw;
+        height: 30vw;
+        min-width: 300px;
+        min-height: 450px;
+        margin: 2vw;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bio-photo{
+        width: 80%;
+        aspect-ratio: 4/3;
+        object-fit: contain;
+    }
+    .name{
+        text-align: center;
+        font-size: clamp(25px,2vw,50px);
+        margin-top: 15px;
+    }
+    .bio-description{
+        font-size: clamp(15px,1.5vw,40px);
+        font-weight: 400;
+        margin: 0;
     }
 </style>
 <body style = "margin: 0; overflow-x: hidden; display: flex; flex-direction: column; position: relative; overscroll-behavior: none;">
@@ -22,7 +71,24 @@
     </header>
     <!-- ITEMS UNIQUE TO THE HOMEPAGE-->
     <main>
-        
+        <h1 class = "site-topic">About the Creators</h1>
+        <div class = "bio-card-container">
+            <div class = "bio-card">
+                <img class = "bio-photo" src = "/images/placeholder.jpg">
+                <h2 class = "name">Kaili Gamos</h2>
+                <h3 class = "bio-description">Content Creator</h3>
+            </div>
+            <div class = "bio-card">
+                <img class = "bio-photo" src = "/images/placeholder.jpg">
+                <h2 class = "name">Kaili's Brother</h2>
+                <h3 class = "bio-description">Content Creator</h3>
+            </div>
+            <div class = "bio-card">
+                <img class = "bio-photo" src = "/images/placeholder.jpg">
+                <h2 class = "name">Jerry Liang</h2>
+                <h3 class = "bio-description">Website Developer</h3>
+            </div>
+        </div>
     </main>
 
     <footer>
