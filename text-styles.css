@@ -23,6 +23,10 @@
     font-family: inter;
     src: url("/fonts/Inter.ttf");
 }
+@font-face{
+    font-family: sunday-morning;
+    src: url("/fonts/sunday-morning.otf");
+}
 
 
 h1{margin: 0; font-family: inter; font-weight: 500;font-size: 35px;}
