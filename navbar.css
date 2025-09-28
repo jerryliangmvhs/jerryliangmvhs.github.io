@@ -53,7 +53,7 @@
 .units-option p{font-size: 12.5px;}
 .hamburger-menu{display: none;}
 .mobile-overlay{display: none;}
-.navbar button{background: none; border: 3px solid rgb(255, 255, 255); font-size: clamp(15px, 2vw, 20px); font-family: inter; font-weight: 500; margin-right: 15px; display: flex; padding: 0; transition: background-color 0.5s ease; color: white;}
+.navbar button{background: none; border: 3px solid rgb(255, 255, 255); font-size: clamp(15px, 2vw, 20px); font-family: inter; font-weight: 500; margin-right: 30px; display: flex; padding: 0; transition: background-color 0.5s ease; color: white;}
 .navbar button:hover{background-color: rgb(255, 255, 255); color: rgb(131, 27, 227); cursor: pointer;}
 .navbar button span{padding: clamp(2px,0.5vw,10px);}
 
