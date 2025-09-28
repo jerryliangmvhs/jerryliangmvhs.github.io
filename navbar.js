@@ -56,7 +56,7 @@ function renderNavbar(){
         </div>
         <div class = "blogs-dropdown-menu" id = "blogs-dropdown-menu">
             <div class = "blogs-content">
-                <h3 style = "text-align: center; margin: 5vw;">Welcome to the animated dropdown navigation. This dropdown will have the menu for the research blogs, and will likely have cool illustrations for them. Stay Tuned!
+                <h3 style = "text-align: center; margin: 5vw;">Blogs Content Coming Soon!
                 </h3>
 
             </div>
