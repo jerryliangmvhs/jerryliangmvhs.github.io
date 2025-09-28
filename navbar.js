@@ -1,7 +1,7 @@
 function renderNavbar(){
     return `      
         <div class = "navbar">
-            <h1 class = "website-name">LILALO Chemistry</h1>
+            <img class = "website-name" src = "/images/website-name-image.png">
             <nav class = "links">
                 <ul>
                     <li><a href = "/">Home</a></li>
