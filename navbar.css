@@ -1,24 +1,4 @@
 @font-face{
-    font-family: sf-pro;
-    src: url("./fonts/SF-Pro-Text-Regular.otf");
-    font-weight: 400;
-}
-@font-face{
-    font-family: sf-pro;
-    src: url("./fonts/SF-Pro-Text-Light.otf");
-    font-weight: 300;
-}
-@font-face{
-    font-family: sf-pro;
-    src: url("./fonts/SF-Pro-Text-Semibold.otf");
-    font-weight: 500;
-}
-@font-face{
-    font-family: sf-pro;
-    src: url("./fonts/SF-Pro-Display-Heavy.otf");
-    font-weight: 600;
-}
-@font-face{
     font-family: inter;
     src: url("./fonts/Inter.ttf");
 }
@@ -72,7 +52,7 @@
     .mobile-overlay{display: none;}
     .mobile-overlay.show{display: flex; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.8);z-index: 1000; justify-content: center; align-items: center; animation: fade-in 0.25s ease;}
     .mobile-menu{width: 100%; font-weight: 600; color: white;list-style-type: none;display: flex; flex-direction: column; text-align: center;padding: 0;}
-    .mobile-menu li{padding: 25px;border-top: 0.5px solid white; border-bottom: 0.5px solid white; font-size: 20px; font-family: sf-pro; font-weight: 600;letter-spacing:1px;text-align: center;}
+    .mobile-menu li{padding: 25px;border-top: 0.5px solid white; border-bottom: 0.5px solid white; font-size: 20px; font-family: inter; font-weight: 500;letter-spacing:1px;text-align: center;}
     .mobile-menu a{text-decoration: none; color: white;}
     .navbar button{display: none;}
 }   
