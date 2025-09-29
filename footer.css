@@ -1,0 +1,50 @@
+@font-face{
+    font-family: inter;
+    src: url("/fonts/Inter.ttf");
+}
+
+footer{
+    background-color: rgb(28, 8, 61);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+     padding-top: 50px;
+    align-self: flex-end;
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    padding-bottom: 50px;
+}
+.footer-image{
+    width: 75%;
+}
+.footer-main-topic{
+    margin-top: 5px;
+    color: rgba(255,255,255,0.9);
+}
+.column{
+    color: rgba(255,255,255,0.8);
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.copyright{
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    margin: 5px;
+}
+.footer-units-list, .footer-units-option{
+    list-style-type: none;
+    padding: 0;
+}
+.footer-units-option{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+}
