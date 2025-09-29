@@ -1,7 +1,7 @@
 function renderNavbar(){
     return `      
         <div class = "navbar">
-            <img class = "website-name" src = "/images/website-name-image.png">
+            <a href = "/"><img class = "website-name" src = "/images/website-name-image.png"></a>
             <nav class = "links">
                 <ul>
                     <li><a href = "/">Home</a></li>

@@ -47,6 +47,7 @@ footer{
     color: rgba(255,255,255,0.9);
     font-size: clamp(40px,3vw,70px);
     font-weight: 500;
+    width: auto;
 }
 .column1{
     color: rgba(255,255,255,0.8);
@@ -71,10 +72,27 @@ footer{
 .footer-units-option{
     margin-top: 5px;
     margin-bottom: 5px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.8) !important;
     text-decoration: none;
     font-size: clamp(15px,2vw,20px) !important;
     font-weight: 300;
+    transition: transform 0.25s ease;
+}
+footer a{
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+}
+.footer-units-option:hover{
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+.home-link, .about-the-creators-link{
+    width: fit-content;
+    transition: transform 0.25s ease;
+}
+.home-link:hover, .about-the-creators-link:hover{
+    transform: translateY(-2px);
+    text-decoration: underline;
 }
 .footer-website-description{
     font-size: clamp(15px,2vw,20px) !important;
