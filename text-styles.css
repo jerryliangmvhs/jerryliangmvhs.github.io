@@ -27,6 +27,10 @@
     font-family: sunday-morning;
     src: url("/fonts/sunday-morning.otf");
 }
+@font-face{
+    font-family: poxast;
+    src: url("/fonts/Poxast.ttf");
+}
 
 
 h1{margin: 0; font-family: inter; font-weight: 500;font-size: 35px;}
