@@ -1,9 +1,7 @@
 function renderFooter(){
     return `<div class = "footer-wrapper">
-            <div class = "column">
-                <img class = "footer-image" src = "/images/website-footer-logo.png">
-            </div>
-            <div class = "column">
+            <img class = "footer-image" src = "/images/website-footer-logo.png">
+            <div class = "column1">
                 <h1 class = "footer-main-topic"><a>Home</a></h1>
                 <h1 class = "footer-main-topic">Units</h1>
                 <ul class = "footer-units-list">
@@ -20,13 +18,13 @@ function renderFooter(){
                     <li class = "footer-units-option"><a>Latest Blogs</a></li>
                 <h1 class = "footer-main-topic"><a>About the Creators</a></h1>
             </div>
-            <div class = "column">
+            <div class = "column2">
                 <p class = "footer-website-description">Live Laugh Love Chemistry strives to
                     provide high school chemistry honors students the resources they need to
                     become a successful chemistry student.
                 </p>
             </div>
         </div>
-        <div class = "copyright">2025 Lilalo Chemistry</div>`
+        <div class = "copyright">© 2025 Lilalo Chemistry</div>`
 }
 document.querySelector("footer").innerHTML = renderFooter();
