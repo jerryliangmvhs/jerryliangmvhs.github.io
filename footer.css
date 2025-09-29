@@ -16,10 +16,13 @@
 .footer-image, .footer-website-description{
     animation: footer-scroll;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 20%;
 }
 footer{
-    background-color: rgb(56, 20, 115);
+    background-image: url("/images/footer-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
