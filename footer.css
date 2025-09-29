@@ -98,6 +98,10 @@ footer a{
     font-size: clamp(15px,2vw,20px) !important;
 }
 @media(max-width: 770px){
+    .footer-image{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
     .footer-main-topic{
         text-align: center;
     }
