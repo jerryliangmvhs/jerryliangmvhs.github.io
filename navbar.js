@@ -16,7 +16,7 @@ function renderNavbar(){
             <div class = "units-content">
                 <div class = "units-box-1">
                     <h1>Units</h1>
-                    <p>List of all Chem H units. Current icons, colors & fonts are temporary.</p>
+                    <p>All content in the chemistry honors curriculum.</p>
                 </div>
                 <div class = "units-box-2">
                     <button class = "units-option" onclick = "location.assign('/units/unit-1/')">
