@@ -56,9 +56,21 @@ function renderNavbar(){
         </div>
         <div class = "blogs-dropdown-menu" id = "blogs-dropdown-menu">
             <div class = "blogs-content">
-                <h3 style = "text-align: center; margin: 5vw;">Blogs Content Coming Soon!
-                </h3>
-
+                <button class = "blog-box">
+                    <img class = "blog-thumbnail" src = "/images/blogs-image-placeholder.png">
+                    <h2 style = "text-align: center;">All Blogs</h2>
+                    <p style = "text-align: center;">Click here to go to all research blogs</p>
+                </button>
+                <button class = "blog-box">
+                    <img class = "blog-thumbnail" src = "/images/blogs-image-placeholder.png">
+                    <h2 style = "text-align: center;">Latest Blog</h2>
+                    <p style = "text-align: center;">Latest Research Blog: Blog Description</p>
+                </button>
+                <button class = "blog-box">
+                    <img class = "blog-thumbnail" src = "/images/blogs-image-placeholder.png">
+                    <h2 style = "text-align: center;">Blog </h2>
+                    <p style = "text-align: center;">Latest Research Blog: Blog Description</p>
+                </button>
             </div>
         </div>
 
