@@ -39,41 +39,59 @@
         margin: 25px;
         text-align: center;
     }
-    .bio-card-container{
-        width: 90%;
+    .bio-text{
         display: flex;
+        height: 100%;
+        align-items: flex-start;
         justify-content: center;
-        flex-wrap: wrap;
-    }
-    .bio-card{
-        background-color: rgba(255,255,255,0.8);
-        width: 20vw;
-        height: 30vw;
-        min-width: 300px;
-        min-height: 450px;
-        margin: 2vw;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        margin-left: 3em;
+    }
+    .bio-container{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: white;
+        border: 2px solid white;
+        box-sizing: content-box;
+        padding: 30px;
+        margin: 20px;
     }
     .bio-photo{
-        width: 80%;
-        aspect-ratio: 4/3;
-        object-fit: contain;
+        width: clamp(175px,30vw,400px);
     }
     .name{
-        text-align: center;
-        font-size: clamp(25px,2vw,50px);
-        margin-top: 15px;
-        font-weight: 800;
+        font-weight: 600;
+        font-size: clamp(25px,3vw,100px) !important;
     }
-    .bio-description{
-        font-size: clamp(15px,1.5vw,40px);
-        font-weight: 300;
-        margin: 0;
+    .description{
+        font-weight: 200;
+        font-size: clamp(12px,1.5vw,50px) !important;
     }
+    @media (max-width: 768px){
+        .bio-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .name{
+            text-align: center;
+        }
+        .description{
+            text-align: center;
+        }
+        .bio-text{
+            margin-left: 0 !important;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+
+
 </style>
 <body style = "margin: 0; overflow-x: hidden; display: flex; flex-direction: column; position: relative; overscroll-behavior: none;">
     <!-- NAVIGATION MENU, REUSE CODE FOR OTHER PAGES-->
@@ -83,16 +101,18 @@
     <!-- ITEMS UNIQUE TO THE HOMEPAGE-->
     <main>
         <h1 class = "site-topic">About the Creators</h1>
-        <div class = "bio-card-container">
-            <div class = "bio-card">
-                <img class = "bio-photo" src = "/images/placeholder.jpg">
-                <h2 class = "name">Kaili Gamos</h2>
-                <h3 class = "bio-description">Content Creator</h3>
+        <div class = "bio-container">
+            <img class = "bio-photo" src = "/images/placeholder.jpg">
+            <div class = "bio-text">
+                <h1 class = "name">Kaili Gamos</h1>
+                <p class = "description">Content Creator</p>
             </div>
-            <div class = "bio-card">
-                <img class = "bio-photo" src = "/images/placeholder.jpg">
-                <h2 class = "name">Jerry Liang</h2>
-                <h3 class = "bio-description">Website Developer</h3>
+        </div>
+        <div class = "bio-container">
+            <img class = "bio-photo" src = "/images/placeholder.jpg">
+            <div class = "bio-text">
+                <h1 class = "name">Jerry Liang</h1>
+                <p class = "description">Website Developer</p>
             </div>
         </div>
     </main>
