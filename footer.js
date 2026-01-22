@@ -25,6 +25,6 @@ function renderFooter(){
                 </p>
             </div>
         </div>
-        <div class = "copyright">© 2025 Lilalo Chemistry</div>`
+        <div class = "copyright">© 2026 Lilalo Chemistry</div>`
 }
 document.querySelector("footer").innerHTML = renderFooter();
