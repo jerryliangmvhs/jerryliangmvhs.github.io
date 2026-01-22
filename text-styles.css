@@ -28,6 +28,10 @@
     src: url("/fonts/sunday-morning.otf");
 }
 @font-face{
+    font-family: bebas-neue;
+    src: url("/fonts/BebasNeue.ttf");
+}
+@font-face{
     font-family: poxast;
     src: url("/fonts/Poxast.ttf");
 }

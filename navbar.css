@@ -11,7 +11,7 @@
 .links ul{margin-top: 0;margin-bottom: 0;margin-right: 15px;display: flex;align-items: center;}
 .links li{list-style: none;display: inline-block;margin-right: 30px;margin-left: 30px;font-weight: bold;font-size: clamp(10px, 1.5vw, 17.5px);transition: transform 0.1s linear;font-weight:500;}
 .links a:hover, .links li:hover{cursor: pointer;transform: translateY(-1px);}
-.links a{text-decoration: none;color: rgba(255, 255, 255, 1);display: flex;align-items: center; text-align: center;}
+.links a{text-decoration: none;color: rgba(255, 255, 255, 1);display: flex;align-items: center; text-align: center; font-weight: 800;}
 .units-dropdown-menu{position: fixed;z-index: 999;top: 0;display: flex;transform: translateY(-100%);width: 100vw; background-color: rgba(156, 113, 248, 0.9);transition: top 1s ease;}
 .units-dropdown-menu.show{top: 0;transform: translateY(0);}
 .blogs-dropdown-menu{position: fixed;z-index: 999;transform: translateY(-100%);display: flex;top: 0vw;left: 0vw;width: 100vw;background-color: rgba(156, 113, 248, 0.9);transition: top 1s ease;}
@@ -72,7 +72,7 @@
 .mobile-overlay{display: none;}
 .navbar button{background: none; border: 3px solid rgb(255, 255, 255); font-size: clamp(15px, 2vw, 20px); font-family: inter; font-weight: 500; margin-right: 30px; display: flex; padding: 0; transition: background-color 0.5s ease; color: white;}
 .navbar button:hover{background-color: rgb(255, 255, 255); color: rgb(131, 27, 227); cursor: pointer;}
-.navbar button span{padding: clamp(2px,0.5vw,10px);}
+.navbar button span{padding: clamp(2px,0.5vw,10px); font-weight: 600;}
 
 
 
