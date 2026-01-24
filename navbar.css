@@ -30,7 +30,7 @@
 .units-option{display: flex;align-items: flex-start;width: 22.5%; min-width: 240px; transition: background-color 0.5s ease;border-bottom: 0.1vw solid black; text-align: left; background: none; border-left: none; border-right: none; border-top: none; color: black !important; margin-left: 15px;}
 .units-option:hover{ background-color: rgba(249, 249, 249, 0.75);cursor: pointer;}
 .units-option img{width: 40px; height: 40px; margin: 10px;}
-.units-option h3{margin-top: 10px; text-decoration: underline;}
+.units-option h3{margin-top: 10px; text-decoration: none; font-weight: 700;}
 .units-option p{font-size: 12.5px;}
 
 .blog-box{
