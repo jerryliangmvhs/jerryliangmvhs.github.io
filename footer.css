@@ -96,6 +96,7 @@ footer a{
 }
 .footer-website-description{
     font-size: clamp(15px,2vw,20px) !important;
+    font-weight: 200;
 }
 @media(max-width: 770px){
     .footer-image{
