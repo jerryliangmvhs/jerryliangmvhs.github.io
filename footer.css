@@ -48,6 +48,7 @@ footer{
     font-size: clamp(40px,3vw,70px);
     font-weight: 500;
     width: auto;
+    font-family: bebas-neue;
 }
 .column1{
     color: rgba(255,255,255,0.8);
