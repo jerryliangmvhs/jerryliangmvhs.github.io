@@ -16,38 +16,203 @@
     </header>
 
     <!-- ITEMS UNIQUE TO THE HOMEPAGE-->
-    <main>
+    <main style = "overflow: hidden;">
         <style>
+            @keyframes text{
+                from{
+                    transform: translateY(100%);
+                    opacity: 0;
+                }
+            }
+            @keyframes breathe{
+                0% ,100%{
+                    transform: translateY(0);
+                }
+                50%{
+                    transform: translateY(-30px);
+                }
+            }
             @keyframes title{
                 from{
                     transform: translateY(20px);
                     opacity: 0;
                 }
             }
+            @keyframes cloud-1{
+                from{
+                    transform: translateX(-100%);
+                }
+            }
+            @keyframes cloud-2{
+                from{
+                    transform: translateX(-100%);
+                }
+            }
+            @keyframes cloud-3{
+                from{
+                    transform: translateY(-100%);
+                }
+            }
+            @keyframes cloud-4{
+                from{
+                    transform: translateX(100%);
+                }
+            }
+            @keyframes cloud-5{
+                from{
+                    transform: translateX(100%);
+                }
+            }
+            @keyframes beaker-1{
+                from{
+                    transform: translateY(100%);
+                }
+            }
+            @keyframes beaker-2{
+                0%,20%{
+                    transform: translateY(100%);
+                }
+            }
+            @keyframes beaker-3{
+                0%,40%{
+                    transform: translateY(100%);
+                }
+            }
+            @keyframes beaker-4{
+                0%,60%{
+                    transform: translateY(100%);
+                }
+            }
+            @keyframes beaker-5{
+                0%,80%{
+                    transform: translateY(100%);
+                }
+            }
+             
             .heroBanner{position: relative; overflow: clip; display: flex; justify-content: center;}
+            .background{width: 100vw; height: 56.25vw; min-width: 1280px; min-height: 720px; background-color: rgb(10, 29, 70); background-size: 100% 100%;}
+            .background > img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .beaker-desktop{
+                opacity: 1;
+            }
+            .beaker-mobile{
+                opacity: 0;
+            }
             .landing-page-animation{width:100vw; min-width: 800px}
-            .hero-banner-text{position: absolute;top:150px; width: 100vw; color:white;opacity: 0.75; display: flex; flex-direction: column; align-items: center;}
+            .hero-banner-text{position: absolute;top:150px; width: 100vw; color:white;opacity: 0.9; display: flex; flex-direction: column; align-items: center;}
             .landing-page-title{font-family: bebas-neue !important; font-size: clamp(60px, 10vw, 140px); font-weight:700; text-align: center; width: 60vw; animation: title 1s ease;}
             .landing-page-description{font-family: bebas-neue !important; margin-left: 100px; margin-right: 100px; text-align: center; font-weight: 700; font-size: clamp(10px,2vw,35px);}
+            .cloud-1{
+                animation: cloud-1 3s ease;
+            }
+            .cloud-2{
+                animation: cloud-2 3s ease;
+            }
+            .cloud-3{
+                animation: cloud-3 3s ease;
+            }
+            .cloud-4{
+                animation: cloud-4 3s ease;
+            }
+            .cloud-5{
+                animation: cloud-5 3s ease;
+            }
+            #beaker-1{
+                animation: beaker-1 3s forwards;
+            }
+            #beaker-2{
+                animation: beaker-2 3s forwards;
+            }
+            #beaker-3{
+                animation: beaker-3 3s forwards;
+            }
+            #beaker-4{
+                animation: beaker-4 3s forwards;
+            }
+            #beaker-5{
+                animation: beaker-5 3s forwards;
+            }
             @media(max-width: 770px){
                 .hero-banner-text{position: absolute;top:75px; width: 100vw; color:white;opacity: 0.9; display: flex; flex-direction: column; align-items: center;}
                 .landing-page-title{font-size: clamp(50px, 6vw, 150px); font-weight:600}
                 .landing-page-description{margin-left: 50px; margin-right: 50px; text-align: center; font-size: clamp(20px,3vw,75px) !important;}
+                .beaker-desktop{
+                    opacity: 0;
+                }
+                .beaker-mobile{
+                    opacity: 1;
+                }
             }
         </style>
         <div class = "heroBanner">
-            <video autoplay muted loop playsinline disablepictureinpicture 
+            <!---<video autoplay muted loop playsinline disablepictureinpicture 
   oncontextmenu="return false;" class = "landing-page-animation">
                 <source src="videos/landing-page-animation-1.mp4" type="video/mp4">
             </video>
-            <div class = hero-banner-text>
+            --->
+            <div class = "background" style = "position: relative; overflow: hidden">
+                <img src = "/images/background.png">
+                <img class = "cloud-1 cloud" src = "/images/cloud1.png">
+                <img class = "cloud-2 cloud" src = "/images/cloud2.png">
+                <img class = "cloud-3 cloud" src = "/images/cloud3.png">
+                <img class = "cloud-4 cloud" src = "/images/cloud4.png">
+                <img class = "cloud-5 cloud" src = "/images/cloud5.png">
+                <img class = "beaker-desktop" id = "beaker-1" src = "/images/beaker1.png">
+                <img class = "beaker-desktop" id = "beaker-2" src = "/images/beaker2.png">
+                <img class = "beaker-desktop" id = "beaker-3" src = "/images/beaker3.png">
+                <img class = "beaker-desktop" id = "beaker-4" src = "/images/beaker4.png">
+                <img class = "beaker-desktop" id = "beaker-5" src = "/images/beaker5.png">
+                <img class = "beaker-mobile" id = "beaker-1" src = "/images/beakermobile1.png">
+                <img class = "beaker-mobile" id = "beaker-2" src = "/images/beakermobile2.png">
+                <img class = "beaker-mobile" id = "beaker-3" src = "/images/beakermobile3.png">
+                <img class = "beaker-mobile" id = "beaker-4" src = "/images/beakermobile4.png">
+                <img class = "beaker-mobile" id = "beaker-5" src = "/images/beakermobile5.png">
+            </div>
+            <div class = hero-banner-text style = "animation: text 3s ease;">
                 <h1 class = "landing-page-title">Live Laugh Love Chemistry</h1>
                 <p class = "landing-page-description">Never struggle with high school chemistry ever again! 
                 </p>
             </div>
         </div>
     </main>
+    <script>
+        const cloud1 = document.querySelector(".cloud-1");
+        const cloud2 = document.querySelector(".cloud-2");
+        const cloud3 = document.querySelector(".cloud-3");
+        const cloud4 = document.querySelector(".cloud-4");
+        const cloud5 = document.querySelector(".cloud-5");
 
+        cloud1.addEventListener('animationend', (e) => {
+        if (e.animationName === 'cloud-1'){
+            cloud1.style.animation = "breathe 4s infinite";
+        }
+        });
+        cloud2.addEventListener('animationend', (e) => {
+        if (e.animationName === 'cloud-2'){
+            cloud2.style.animation = "breathe 4s infinite";
+        }
+        });
+        cloud3.addEventListener('animationend', (e) => {
+        if (e.animationName === 'cloud-3'){
+            cloud3.style.animation = "breathe 4s infinite";
+        }
+        });
+        cloud4.addEventListener('animationend', (e) => {
+        if (e.animationName === 'cloud-4'){
+            cloud4.style.animation = "breathe 4s infinite";
+        }
+        });
+        cloud5.addEventListener('animationend', (e) => {
+        if (e.animationName === 'cloud-5'){
+            cloud5.style.animation = "breathe 4s infinite";
+        }
+        });
+        
+    </script>
     <footer class = "footer">
         <script src = "/footer.js"></script>
     </footer>

@@ -19,7 +19,7 @@
     animation-range: entry 0% cover 40%;
 }
 footer{
-    background-image: url("/images/footer-background.jpg");
+    background-color: rgb(79, 91, 200);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
