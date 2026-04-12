@@ -88,7 +88,12 @@
                     transform: translateY(100%);
                 }
             }
-             
+             main{
+                background-color: rgb(10, 29, 70);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+             }
             .heroBanner{position: relative; overflow: clip; display: flex; justify-content: center;}
             .background{width: 100vw; height: 56.25vw; min-width: 1280px; min-height: 720px; background-color: rgb(10, 29, 70); background-size: 100% 100%;}
             .background > img{
@@ -136,6 +141,28 @@
             #beaker-5{
                 animation: beaker-5 3s forwards;
             }
+            .introduction{
+                display: flex;
+               flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+                margin: 2em;
+            }
+            .introduction h1{
+                font-family: bebas-neue;
+                font-size: clamp(20px,7vw,100px);
+            }
+            .introduction p{
+                font-weight: 200;
+                font-size: clamp(10px,4vw,20px);
+            }
+            .introduction img{
+                width: clamp(200px,40vw,1024px);
+            }
+            .introduction div{
+                margin: 4em;
+                width: clamp(200px,40vw,1024px);
+            }
             @media(max-width: 770px){
                 .hero-banner-text{position: absolute;top:75px; width: 100vw; color:white;opacity: 0.9; display: flex; flex-direction: column; align-items: center;}
                 .landing-page-title{font-size: clamp(50px, 6vw, 150px); font-weight:600}
@@ -145,6 +172,15 @@
                 }
                 .beaker-mobile{
                     opacity: 1;
+                }
+                .introduction img{
+                width: clamp(200px,70vw,1024px);
+                }
+                .introduction h1{
+                    text-align: center;
+                }
+                .introduction p{
+                    text-align: center;
                 }
             }
         </style>
@@ -178,6 +214,13 @@
                 </p>
             </div>
         </div>
+        <section class = "introduction">
+            <img src = "/images/video-placeholder.jpg">
+            <div>
+                <h1 style = "color: white;">Welcome</h1>
+                <p style = "color: white;">Welcome to Live Laugh Love Chemistry, a high school chemistry honors study resource website. Through this website, you will be able to find our videos for each unit to help you visualize and understand the material better.</p>
+            </div>
+        </section>
     </main>
     <script>
         const cloud1 = document.querySelector(".cloud-1");

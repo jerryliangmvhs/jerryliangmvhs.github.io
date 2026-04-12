@@ -18,6 +18,22 @@
     }
     main{
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .unit-site-title{
+        margin-top: 1.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        text-align: center;
+        color: white;
+        font-family: bebas-neue;
+        font-size: clamp(20px,6vw,80px);
+    }
+    .video-placeholder{
+        width: 90%;
+        margin: 50px;
     }
 </style>
 <body style = "margin: 0; overflow-x: hidden; display: flex; flex-direction: column; position: relative; overscroll-behavior: none;">
@@ -25,10 +41,10 @@
     <header id = "header">
         <script src = "/navbar.js"></script>
     </header>
-
     <!-- ITEMS UNIQUE TO THE HOMEPAGE-->
     <main>
-        
+        <h1 class = "unit-site-title">Unit 1: Foundations of Chemistry</h1>
+        <img class = "video-placeholder" src = "/images/video-placeholder.jpg">
     </main>
 
     <footer>
