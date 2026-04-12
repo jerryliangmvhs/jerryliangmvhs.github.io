@@ -79,14 +79,62 @@ function renderNavbar(){
         <div class = "mobile-overlay" id = "mobile-overlay">
             <ul class = "mobile-menu">
                 <li><a href = "/">Home</a></li>
-                <li><a>Units</a></li>
-                <li><a>Research Blogs</a></li>
-                <li><a href = "/about-the-creators/">About the Creators</a></li>
+                <li><a onclick = "toggleMobileUnits()";>Units</a></li>
+                <li class = "mobile-units-menu" id = "mobile-units-menu">
+                    <a href = "/units/unit-1/">
+                        <img src = "/images/unit-1-icon.png">
+                        <h3>Unit 1</h3>
+                        <p>Foundations of Chemistry</p>
+                    </a>
+
+                    <a href = "/units/unit-2/">
+                        <img src = "/images/unit-2-icon.png">
+                        <h3>Unit 2</h3>
+                        <p>Atomic Structure</p>
+                    </a>
+
+                    <a href = "/units/unit-3/">
+                        <img src = "/images/unit-3-icon.png">
+                        <h3>Unit 3</h3>
+                        <p>Electronic Structure</p>
+                    </a>
+                    <a href = "/units/unit-4/">
+                        <img src = "/images/unit-4-icon.png">
+                        <h3>Unit 4</h3>
+                        <p>Chemical Bonding</p>
+                    </a>
+                    <a href = "/units/unit-5/">
+                        <img src = "/images/unit-5-icon.png">
+                        <h3>Unit 5</h3>
+                        <p>Chemical Reactions</p>
+                    </a>
+                    <a href = "/units/unit-6/">
+                        <img src = "/images/unit-6-icon.png">
+                        <h3>Unit 6</h3>
+                        <p>Stoichiometry</p>
+                    </a>
+                    <a href = "/units/unit-7/">
+                        <img src = "/images/unit-7-icon.png">
+                        <h3>Unit 7</h3>
+                        <p>Thermochemistry</p>
+                    </a>
+                    <a href = "/units/unit-8/">
+                        <img src = "/images/unit-8-icon.png">
+                        <h3>Unit 8</h3>
+                        <p>Equilibrium, Acid & Bases</p>
+                    </a>
+                </li>
+             <li><a>Research Blogs</a></li>
+            <li><a href = "/about-the-creators/">About the Creators</a></li>
             </ul>
         </div>`
 }
 
 document.getElementById("header").innerHTML = renderNavbar();
+
+function toggleMobileUnits(){
+    document.getElementById("mobile-units-menu").classList.toggle("show");
+}
 
 
 
