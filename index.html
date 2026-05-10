@@ -145,8 +145,11 @@
                 display: flex;
                flex-wrap: wrap;
                 justify-content: center;
-                align-items: flex-start;
-                margin: 2em;
+                align-items: center;
+                margin-left: clamp(25px,2vw,100px);
+                margin-right: clamp(25px,2vw,100px);
+                margin-top: clamp(100px,9vw,150px);
+                margin-bottom: clamp(50px,5vw,100px);
             }
             .introduction h1{
                 font-family: bebas-neue;
@@ -162,6 +165,62 @@
             .introduction div{
                 margin: 4em;
                 width: clamp(200px,40vw,1024px);
+            }
+            .units-section{
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .unit-buttons-container{
+                width: 90%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                place-items: center;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .unit-button{
+                width: 90%;
+                position: relative;
+                border: 2px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                aspect-ratio: 1/1;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .unit-button img{
+                width: 80%;
+            }
+            .unit-button p{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: bebas-neue;
+                color: rgb(10, 29, 70);
+                font-size: clamp(20px,3vw,40px);
+                text-align: center;
+                background-color: white;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+            .unit-button p:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+            .our-content{
+                color: white;
+                font-family: bebas-neue;
+                font-size: clamp(20px, 7vw, 100px);
+                text-align: center;
             }
             @media(max-width: 770px){
                 .hero-banner-text{position: absolute;top:75px; width: 100vw; color:white;opacity: 0.9; display: flex; flex-direction: column; align-items: center;}
@@ -181,6 +240,12 @@
                 }
                 .introduction p{
                     text-align: center;
+                }
+                .unit-buttons-container{
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    place-items: center;
                 }
             }
         </style>
@@ -219,6 +284,44 @@
             <div>
                 <h1 style = "color: white;">Welcome</h1>
                 <p style = "color: white;">Welcome to Live Laugh Love Chemistry, a high school chemistry honors study resource website. Through this website, you will be able to find our videos for each unit to help you visualize and understand the material better.</p>
+            </div>
+        </section>
+        <h1 class = "our-content">Our Content</h1>
+        <section class = "units-section">
+            <h1></h1>
+            <div class = "unit-buttons-container">
+                <div class = "unit-button" onclick = "location.assign('units/unit-1/')">
+                    <img src = "images/unit-1-icon.png">
+                    <p>01: Foundations of Chemistry</p>
+                </div>
+                <div class = "unit-button" onclick = "location.assign('units/unit-2/')">
+                    <img src = "images/unit-2-icon.png">
+                    <p>02: Atomic Structure</p>
+                </div>
+                <div class = "unit-button" onclick = "location.assign('units/unit-3/')">
+                    <img src = "images/unit-3-icon.png">
+                    <p>03: Electronic Structure</p>
+                </div>
+                <div class = "unit-button" onclick = "location.assign('units/unit-4/')">
+                    <img src = "images/unit-4-icon.png">
+                    <p>04: Chemical Bonding</p>
+                </div>
+                <div class = "unit-button" onclick = "location.assign('units/unit-5/')">
+                    <img src = "images/unit-5-icon.png">
+                    <p>05: Chemical Reactions</p>
+                </div>
+                <div class = "unit-button" onclick = "location.assign('units/unit-6/')">
+                    <img src = "images/unit-6-icon.png">
+                    <p>06: Stoichiometry</p>
+                </div>
+                <div class = "unit-button" onclick = "location.assign('units/unit-7/')">
+                    <img src = "images/unit-7-icon.png">
+                    <p>07: Thermochemistry</p>
+                </div>
+                <div class = "unit-button" onclick = "location.assign('units/unit-8/')">
+                    <img src = "images/unit-8-icon.png">
+                    <p>08: Equilibrium, Acid & Bases</p>
+                </div>
             </div>
         </section>
     </main>
